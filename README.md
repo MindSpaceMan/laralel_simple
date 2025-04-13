@@ -65,4 +65,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-# Редис могу подключить, но если будет реальный проект.
+# http://127.0.0.1:8000/api/delivery-intervals?date=2025-04-12&time=17:00&direction=%D0%93%D0%BE%D1%80%D0%BE%D0%B4_1
+Example.

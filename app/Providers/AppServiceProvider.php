@@ -11,11 +11,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(\App\DTO\WeatherRequestDTO::class, function ($app) {
+        $this->app->bind(\App\DTO\GetIntervalsDTO::class, function ($app) {
             // Получаем все данные из текущего запроса
             $data = request()->all();
             // Создаём новый DTO, валидация произойдёт в его конструкторе
-            return new \App\DTO\WeatherRequestDTO($data);
+            return new \App\DTO\GetIntervalsDTO($data);
         });
     }
 
@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        \Carbon\Carbon::setLocale('ru');
     }
 }
