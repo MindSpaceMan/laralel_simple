@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('city_name')->nullable(); // Название города из 2GIS
             $table->json('weather_data')->nullable(); // Данные погоды из Яндекс API
             $table->timestamps();
+            $table->index(['request_date']);
+            $table->index(['latitude', 'longitude']);
         });
     }
 
